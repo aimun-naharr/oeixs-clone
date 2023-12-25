@@ -20,7 +20,7 @@ const Navbar = () => {
         trigger: logoRef.current,
         scrub: true,
         start: "top 10%",
-        markers: true,
+        // markers: true,
         // end: "+=500px",
       },
     });
