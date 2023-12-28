@@ -21,7 +21,7 @@ const HeroSection = () => {
     <div
       className=" mt-[50vh]  flex flex-col items-center justify-center font-bold "
       data-scroll
-      data-scroll-speed="0.3"
+      data-scroll-speed="0.4"
     >
       <div className="mt-4 ml-32 flex flex-col items-center gap-4">
         <p className="w-80 text-center text-xl ">
@@ -37,7 +37,12 @@ const HeroSection = () => {
         </div>
         <div className="mouse-scroll"></div>
       </div>
-      <div className="mt-4 hero-section-img" id="hero-section-img">
+      <div
+        className="mt-4 hero-section-img"
+        id="hero-section-img"
+        data-scroll
+        data-scroll-speed="0.8"
+      >
         <img src="https://oeixs.com/assets/oeixs.gif" alt="" />
       </div>
     </div>

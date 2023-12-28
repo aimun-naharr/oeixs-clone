@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import "./App.css";
 import HeroSection from "./components/hero-section";
+import SecondSection from "./components/second-section";
 import Navbar from "./components/ui/navbar";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
     <main id="main">
       <Navbar />
       <HeroSection />
-      <section className="h-screen">hello</section>
+      <SecondSection />
       <section className="h-screen">hello</section>
     </main>
   );
