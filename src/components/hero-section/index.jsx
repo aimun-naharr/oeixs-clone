@@ -41,7 +41,7 @@ const HeroSection = () => {
         className="mt-4 hero-section-img"
         id="hero-section-img"
         data-scroll
-        data-scroll-speed="0.8"
+        data-scroll-speed="0.1"
       >
         <img src="https://oeixs.com/assets/oeixs.gif" alt="" />
       </div>

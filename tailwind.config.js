@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'navFont': ['font-4', 'system-ui'],
+
+      }
 
     },
   },
