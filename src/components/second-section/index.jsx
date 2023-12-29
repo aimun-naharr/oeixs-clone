@@ -32,14 +32,14 @@ const SecondSection = () => {
         </button>
       </div>
       <div className="text-4xl flex flex-col gap-2" id="second-section-texts">
-        <p className="opacity-30 inline-block">WELCOME TO OEIXS</p>
-        <p className="opacity-30 inline-block">
+        <p className="opacity-10 inline-block">WELCOME TO OEIXS</p>
+        <p className="opacity-10 inline-block">
           WHERE EXPERTISE MEETS INNOVATION
         </p>
-        <p className="opacity-30 inline-block">
+        <p className="opacity-10 inline-block">
           WE EMPOWER TO YOU REACH YOUR FULL
         </p>
-        <p className="opacity-30 inline-block">
+        <p className="opacity-10 inline-block">
           POTENTIAL ON RANGE OF KEY AREAS
         </p>
       </div>

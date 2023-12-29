@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "./App.css";
+import GallerySection from "./components/gallery-section";
 import HeroSection from "./components/hero-section";
 import SecondSection from "./components/second-section";
 import Navbar from "./components/ui/navbar";
@@ -17,7 +18,16 @@ function App() {
       <Navbar />
       <HeroSection />
       <SecondSection />
-      <section className="h-screen">hello</section>
+      <GallerySection />
+      <section className="h-screen">
+        <marquee
+          behavior="smooth"
+          direction="left"
+          className="text-[15vh] uppercase font-navFont"
+        >
+          Contact us. let's talk👋🏻
+        </marquee>
+      </section>
     </main>
   );
 }

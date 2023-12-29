@@ -118,6 +118,7 @@ body {
   color: var(--light-blue);
   /* padding: 0 2rem 0 1rem; */
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .content-wrapper {
   max-width: 1024px;
@@ -233,4 +234,28 @@ body {
 
 .hero-section-img {
   clip-path: inset(20%);
+}
+
+/* gallery card styles======== */
+
+.gallery-card-img img {
+  transition: all 0.3s ease;
+}
+.gallery-card:hover .gallery-card-img img {
+  transform: rotate(-5deg);
+  scale: 1.2;
+}
+.gallery-card:hover .gallery-card-title {
+  display: block;
+}
+.gallery-card-title {
+  display: none;
+  animation: scroll 10s linear infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes scroll {
+  100% {
+    transform: translateX(-100%);
+  }
 }
