@@ -24,14 +24,17 @@ const SecondSection = () => {
   return (
     <div
       id="second-section"
-      className=" content-wrapper font-navFont flex flex-col gap-6"
+      className=" content-wrapper font-navFont flex flex-col gap-6 px-2 md:px-0"
     >
       <div>
         <button className="bg-[--light-blue] text-black font-navFont px-4 py-2 rounded-full ">
           About us
         </button>
       </div>
-      <div className="text-4xl flex flex-col gap-2" id="second-section-texts">
+      <div
+        className="md:text-4xl text-2xl flex flex-col gap-2"
+        id="second-section-texts"
+      >
         <p className="opacity-10 inline-block">WELCOME TO OEIXS</p>
         <p className="opacity-10 inline-block">
           WHERE EXPERTISE MEETS INNOVATION

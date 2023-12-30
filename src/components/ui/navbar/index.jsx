@@ -2,6 +2,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import PrimaryButton from "../PrimaryButton";
+import MobileNav from "./mobile";
 
 const Navbar = () => {
   const leftNavItems = ["Work", "Academy", "About", "News"];

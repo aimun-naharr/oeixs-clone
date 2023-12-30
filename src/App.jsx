@@ -4,6 +4,7 @@ import GallerySection from "./components/gallery-section";
 import HeroSection from "./components/hero-section";
 import SecondSection from "./components/second-section";
 import Navbar from "./components/ui/navbar";
+import MobileNav from "./components/ui/navbar/mobile";
 
 function App() {
   useEffect(() => {
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <main className="w-screen">
+      <MobileNav />
       <Navbar />
       <HeroSection />
       <SecondSection />

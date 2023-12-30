@@ -7,29 +7,29 @@ const GallerySection = () => {
   const firstSection = [
     {
       img: "https://oeixs.com/assets/devices-oeixs.jpg",
-      title: "Stand Design",
+      title: "Stand Design. Stand Design. Stand Design.",
     },
     {
       img: "https://oeixs.com/assets/brand-oeixs.jpg",
-      title: "Branding Design",
+      title: "Branding Design. Branding Design. Branding Design",
     },
     {
       img: "https://oeixs.com/assets/computer-oeixs.jpg",
-      title: "Digital Marketing",
+      title: "Digital Marketing. Digital Marketing. Digital Marketing.",
     },
   ];
   const secondSection = [
     {
       img: "https://oeixs.com/assets/design-oeixs.jpg",
-      title: "Business Cards",
+      title: "Business Cards. Business Cards. Business Cards.",
     },
     {
       img: "https://oeixs.com/assets/marketing-oeixs.jpg",
-      title: "UI/UX Web Design &",
+      title: "UI/UX Web Design &. UI/UX Web Design &. UI/UX Web Design &",
     },
     {
       img: "https://oeixs.com/assets/department-business.jpg",
-      title: "Strategy business",
+      title: "Strategy business. Strategy business. Strategy business",
     },
   ];
   useEffect(() => {
