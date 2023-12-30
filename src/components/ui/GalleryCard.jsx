@@ -11,7 +11,7 @@ const GalleryCard = ({ element }) => {
         />
       </div>
       <div className="absolute bottom-8 whitespace-nowrap text-5xl font-navFont gallery-card-title">
-        <marquee>{element.title}</marquee>
+        {element.title}
       </div>
     </div>
   );

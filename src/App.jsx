@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import "./App.css";
+import AccomplishmentsSection from "./components/accomplishment";
 import GallerySection from "./components/gallery-section";
 import HeroSection from "./components/hero-section";
 import SecondSection from "./components/second-section";
+import Footer from "./components/ui/Footer";
 import Navbar from "./components/ui/navbar";
 import MobileNav from "./components/ui/navbar/mobile";
 
@@ -20,16 +22,19 @@ function App() {
       <Navbar />
       <HeroSection />
       <SecondSection />
+      <AccomplishmentsSection />
       <GallerySection />
-      <section className="h-screen">
+      <section className="my-20">
         <marquee
           behavior="smooth"
           direction="left"
-          className="text-[15vh] uppercase font-navFont"
+          className="text-[15vh] uppercase font-navFont "
         >
-          Contact us. let's talk👋🏻
+          Contact us. let's talk👋🏻 Contact us. let's talk👋🏻Contact us. let's
+          talk👋🏻
         </marquee>
       </section>
+      <Footer />
     </main>
   );
 }

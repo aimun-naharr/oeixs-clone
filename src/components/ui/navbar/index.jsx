@@ -2,10 +2,9 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import PrimaryButton from "../PrimaryButton";
-import MobileNav from "./mobile";
 
 const Navbar = () => {
-  const leftNavItems = ["Work", "Academy", "About", "News"];
+  const leftNavItems = ["Work", "Academy", "About"];
   const rightNavItems = ["Ebusiness", "PT"];
   const navItemOuterDivStyles =
     "absolute bg-[--light-blue] text-black h-full w-full top-[100%] left-0 flex items-center justify-center  pointer ";
@@ -19,10 +18,9 @@ const Navbar = () => {
 
     const timeline = gsap.timeline({
       scrollTrigger: {
-        trigger: logoRef.current,
+        trigger: document.documentElement,
         scrub: 1,
         start: "top 10%",
-        // end: ''
       },
     });
 

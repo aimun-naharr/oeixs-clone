@@ -38,7 +38,7 @@ const GallerySection = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#gallery-section",
-        start: "top 50%",
+        start: "30% 50%",
         end: "bottom",
         // markers: true,
         scrub: 1,
