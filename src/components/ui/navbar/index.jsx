@@ -19,7 +19,7 @@ const Navbar = () => {
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: logoRef.current,
-        scrub: true,
+        scrub: 1,
         start: "top 10%",
         // end: ''
       },

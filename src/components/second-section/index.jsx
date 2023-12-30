@@ -16,7 +16,7 @@ const SecondSection = () => {
         start: "-20% 70%",
         end: "bottom bottom",
         // markers: true,
-        scrub: true,
+        scrub: 1,
       },
     });
     // });

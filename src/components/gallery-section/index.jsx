@@ -33,7 +33,7 @@ const GallerySection = () => {
     },
   ];
   useEffect(() => {
-    let mm=gsap.matchMedia()
+    let mm = gsap.matchMedia();
     gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -41,11 +41,11 @@ const GallerySection = () => {
         start: "top 50%",
         end: "bottom",
         // markers: true,
-        scrub: true,
+        scrub: 1,
       },
     });
- 
-    mm.add("(min-width: 1000px)",()=>{
+
+    mm.add("(min-width: 1000px)", () => {
       tl.to("#top-gallery-section", {
         x: 300,
       }).to(
@@ -55,7 +55,7 @@ const GallerySection = () => {
         },
         0
       );
-    })
+    });
   }, []);
   return (
     <div
