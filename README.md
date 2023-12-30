@@ -1,8 +1,18 @@
-# React + Vite
+# Oeixs-clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This is a fun project where I tried to clone a website which was featured on Minimal gallery.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Learnings
++ Learnt about interactive web designs
++  Cool scroll animations
++  Responsive animations 
+
+## Installation
+
+To install all the dependencies
+
+```bash
+$ npm install
+$ npm run dev
