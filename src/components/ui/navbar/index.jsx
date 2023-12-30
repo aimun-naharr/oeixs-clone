@@ -13,15 +13,15 @@ const Navbar = () => {
   const logoRef = useRef(null);
 
   useEffect(() => {
-    let mm=gsap.matchMedia()
+    let mm = gsap.matchMedia();
     gsap.registerPlugin(ScrollTrigger);
 
     const timeline = gsap.timeline({
-      ease:'Linear.easeNone',
       scrollTrigger: {
         trigger: logoRef.current,
         scrub: true,
         start: "top 10%",
+        // end: ''
       },
     });
 
@@ -29,7 +29,7 @@ const Navbar = () => {
       .to(logoRef.current, {
         y: 0,
         x: 0,
-        scale: 0.3,
+        scale: 0.2,
         duration: 1,
       })
       .to("#navbar", { backgroundColor: "black", zIndex: 3, duration: 1 })
@@ -42,15 +42,25 @@ const Navbar = () => {
         },
         0
       );
-      mm.add("(min-width: 1500px)",()=>{
-        timeline
+    mm.add("(min-width: 1500px)", () => {
+      timeline
         .to(logoRef.current, {
           y: 0,
           x: 0,
-          scale: 0.2,
+          scale3d: 0.2,
           duration: 1,
         })
-      })
+        .to("#navbar", { backgroundColor: "black", zIndex: 3, duration: 1 })
+        .to(
+          "#hero-section-img",
+          {
+            clipPath: "inset(0%)",
+            duration: 1,
+            // ease: "none",
+          },
+          0
+        );
+    });
   }, []);
 
   return (
@@ -73,7 +83,7 @@ const Navbar = () => {
         </div>
         {/* left nav items end----------- */}
         {/* logo start--------- */}
-        <div id="oeixs-logo">
+        <div className="" id="oeixs-logo">
           <img
             ref={logoRef}
             src="https://oeixs.com/assets/oeixs_logo.svg"
