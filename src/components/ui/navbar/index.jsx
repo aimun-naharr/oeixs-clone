@@ -29,7 +29,10 @@ const Navbar = () => {
       .to(logoRef.current, {
         y: 0,
         x: 0,
-        scale: 0.2,
+        z: 0,
+        scaleX: 0.2,
+        scaleY: 0.2,
+        scaleZ: 1,
         duration: 1,
       })
       .to("#navbar", { backgroundColor: "black", zIndex: 3, duration: 1 })
@@ -47,7 +50,10 @@ const Navbar = () => {
         .to(logoRef.current, {
           y: 0,
           x: 0,
-          scale3d: 0.2,
+          z: 0,
+          scaleX: 0.2,
+          scaleY: 0.2,
+          scaleZ: 1,
           duration: 1,
         })
         .to("#navbar", { backgroundColor: "black", zIndex: 3, duration: 1 })
