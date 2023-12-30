@@ -45,7 +45,7 @@ const GallerySection = () => {
       },
     });
  
-    mm.add("(min-width: 1500px)",()=>{
+    mm.add("(min-width: 1000px)",()=>{
       tl.to("#top-gallery-section", {
         x: 300,
       }).to(
@@ -66,7 +66,7 @@ const GallerySection = () => {
     >
       <div
         id="top-gallery-section"
-        className="grid md:grid-cols-3 grid-cols-1 gap-2 mb-2 lg:translate-x-[-300px]"
+        className="grid md:grid-cols-3 grid-cols-1 gap-2 mb-2 "
       >
         {firstSection.map((elm) => {
           return <GalleryCard key={elm.img} element={elm} />;
@@ -74,7 +74,7 @@ const GallerySection = () => {
       </div>
       <div
         id="bottom-gallery-section"
-        className="grid md:grid-cols-3 grid-cols-1 gap-2 lg:translate-x-[300px]"
+        className="grid md:grid-cols-3 grid-cols-1 gap-2 "
       >
         {secondSection.map((elm) => {
           return <GalleryCard key={elm.img} element={elm} />;

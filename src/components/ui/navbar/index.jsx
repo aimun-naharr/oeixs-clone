@@ -17,12 +17,11 @@ const Navbar = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     const timeline = gsap.timeline({
+      ease:'Linear.easeNone',
       scrollTrigger: {
         trigger: logoRef.current,
         scrub: true,
         start: "top 10%",
-        // markers: true,
-        // end: "+=500px",
       },
     });
 
@@ -31,16 +30,14 @@ const Navbar = () => {
         y: 0,
         x: 0,
         scale: 0.3,
-        // skew: '',
-        duration: 8,
-        // ease: "power1.out",
+        duration: 1,
       })
-      .to("#navbar", { backgroundColor: "black", zIndex: 3, duration: 2 })
+      .to("#navbar", { backgroundColor: "black", zIndex: 3, duration: 1 })
       .to(
         "#hero-section-img",
         {
           clipPath: "inset(0%)",
-          duration: 5,
+          duration: 1,
           // ease: "none",
         },
         0
@@ -51,10 +48,7 @@ const Navbar = () => {
           y: 0,
           x: 0,
           scale: 0.2,
-
-          // skew: '',
           duration: 1,
-          // ease: "power1.out",
         })
       })
   }, []);

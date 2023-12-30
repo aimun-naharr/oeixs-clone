@@ -2,21 +2,7 @@ import React from "react";
 import PrimaryButton from "../ui/PrimaryButton";
 
 const HeroSection = () => {
-  // useLayoutEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger);
 
-  //   const timeline = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: "#hero-section-img",
-  //       scrub: true,
-  //       start: "top 75%",
-  //       // end: "+=500px",
-  //       markers: true,
-  //     },
-  //   });
-
-  //   timeline
-  // }, []);
   return (
     <div
       className=" md:mt-[50vh] mt-[20vh] flex flex-col items-center justify-center font-bold w-screen "
@@ -38,10 +24,9 @@ const HeroSection = () => {
         <div className="mouse-scroll"></div>
       </div>
       <div
-        className="md:mt-4 mt-3 hero-section-img"
+        className="md:my-4 my-3 hero-section-img"
         id="hero-section-img"
-        data-scroll
-        data-scroll-speed="0.1"
+      
       >
         <img src="https://oeixs.com/assets/oeixs.gif" alt="" />
       </div>
