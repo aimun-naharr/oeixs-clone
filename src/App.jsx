@@ -14,7 +14,7 @@ function App() {
   }, []);
 
   return (
-    <main id="main">
+    <main className="w-screen">
       <Navbar />
       <HeroSection />
       <SecondSection />

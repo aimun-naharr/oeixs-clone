@@ -33,6 +33,7 @@ const GallerySection = () => {
     },
   ];
   useEffect(() => {
+    let mm=gsap.matchMedia()
     gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -43,15 +44,18 @@ const GallerySection = () => {
         scrub: true,
       },
     });
-    tl.to("#top-gallery-section", {
-      x: 300,
-    }).to(
-      "#bottom-gallery-section",
-      {
-        x: -300,
-      },
-      0
-    );
+ 
+    mm.add("(min-width: 1500px)",()=>{
+      tl.to("#top-gallery-section", {
+        x: 300,
+      }).to(
+        "#bottom-gallery-section",
+        {
+          x: -300,
+        },
+        0
+      );
+    })
   }, []);
   return (
     <div
@@ -62,7 +66,7 @@ const GallerySection = () => {
     >
       <div
         id="top-gallery-section"
-        className="grid grid-cols-3 gap-2 mb-2 translate-x-[-300px]"
+        className="grid md:grid-cols-3 grid-cols-1 gap-2 mb-2 lg:translate-x-[-300px]"
       >
         {firstSection.map((elm) => {
           return <GalleryCard key={elm.img} element={elm} />;
@@ -70,7 +74,7 @@ const GallerySection = () => {
       </div>
       <div
         id="bottom-gallery-section"
-        className="grid grid-cols-3 gap-2 translate-x-[300px]"
+        className="grid md:grid-cols-3 grid-cols-1 gap-2 lg:translate-x-[300px]"
       >
         {secondSection.map((elm) => {
           return <GalleryCard key={elm.img} element={elm} />;

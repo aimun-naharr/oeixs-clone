@@ -13,6 +13,7 @@ const Navbar = () => {
   const logoRef = useRef(null);
 
   useEffect(() => {
+    let mm=gsap.matchMedia()
     gsap.registerPlugin(ScrollTrigger);
 
     const timeline = gsap.timeline({
@@ -44,6 +45,18 @@ const Navbar = () => {
         },
         0
       );
+      mm.add("(min-width: 1500px)",()=>{
+        timeline
+        .to(logoRef.current, {
+          y: 0,
+          x: 0,
+          scale: 0.2,
+
+          // skew: '',
+          duration: 1,
+          // ease: "power1.out",
+        })
+      })
   }, []);
 
   return (

@@ -197,6 +197,7 @@ body {
   /* scale: 0.5; */
   position: relative;
   width: 100%;
+  /* height: 60px; */
   /* border: 1px solid; */
 
   /* scale: 0.3; */
@@ -208,14 +209,15 @@ body {
   height: 100%; */
   transform: translate3d(0, 29vh, 0) scale3d(2.5, 2.5, 1);
   transform-style: preserve-3d;
+  object-fit: cover;
 }
-/* @media (max-width: 1300px) {
+@media (min-width: 1500px) {
     #oeixs-logo img {
 
-      transform: translate3d(0, 29vh, 0) scale3d(1.5, 1.5, 1);
+      transform: translate3d(0, 29vh, 0) scale3d(1, 1, 1);
       transform-style: preserve-3d;
     }
-  } */
+  }
 
 .mouse-scroll {
   width: 20px;
