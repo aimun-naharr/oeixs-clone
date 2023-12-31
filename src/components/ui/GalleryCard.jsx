@@ -8,6 +8,7 @@ const GalleryCard = ({ element }) => {
           src={element.img}
           alt={element.title}
           className="h-full w-full object-cover"
+          loading="lazy"
         />
       </div>
       <div className="absolute bottom-8 whitespace-nowrap text-5xl font-navFont gallery-card-title">

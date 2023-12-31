@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="py-12 content-wrapper flex justify-between items-center text-gray-300 font-navFont">
+    <div className="py-12 px-2 md:px-0 content-wrapper flex justify-between items-center text-gray-300  text-sm md:text-xl uppercase font-bold">
       <p>
-        Made with ❤️ by
+        Made by
         <span className="ml-2 hover:underline transition-all">
           <a
             href="https://github.com/aimun-naharr"

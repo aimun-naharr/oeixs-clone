@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="mouse-scroll"></div>
       </div>
       <div className="md:my-4 my-3 hero-section-img" id="hero-section-img">
-        <img src="https://oeixs.com/assets/oeixs.gif" alt="" />
+        <img src="https://oeixs.com/assets/oeixs.gif" alt="" loading="lazy" />
       </div>
     </div>
   );

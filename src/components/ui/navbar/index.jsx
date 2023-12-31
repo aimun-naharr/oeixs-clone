@@ -50,8 +50,8 @@ const Navbar = () => {
           y: 0,
           x: 0,
           z: 0,
-          scaleX: 0.2,
-          scaleY: 0.2,
+          scaleX: 0.1,
+          scaleY: 0.1,
           scaleZ: 1,
           duration: 1,
         })

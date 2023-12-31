@@ -210,6 +210,13 @@ body {
     /* border: 2px solid red; */
   }
 }
+@media (min-width: 1600px) {
+  #oeixs-logo img {
+    transform: translate3d(0, 35vh, 0) scale3d(1, 1, 1);
+    transform-style: preserve-3d;
+    /* border: 2px solid red; */
+  }
+}
 
 .mouse-scroll {
   width: 20px;
@@ -228,6 +235,11 @@ body {
 
 .hero-section-img {
   clip-path: inset(20%);
+}
+@media (max-width: 500px) {
+  .hero-section-img {
+    clip-path: inset(5%);
+  }
 }
 
 /* gallery card styles======== */

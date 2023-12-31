@@ -28,7 +28,7 @@ function App() {
         <marquee
           behavior="smooth"
           direction="left"
-          className="text-[15vh] uppercase font-navFont "
+          className="md:text-[15vh] text-xl uppercase font-navFont "
         >
           Contact us. let's talk👋🏻 Contact us. let's talk👋🏻Contact us. let's
           talk👋🏻
